@@ -77,4 +77,4 @@ Este sistema permite gestionar el flujo completo de medicamentos:
 
 ## **Video de Demostración**
 Puedes ver la demostración del sistema en el siguiente enlace:  
-[Ver video de demostración]([ENLACE_DE_ONEDRIVE](https://unmsmmail-my.sharepoint.com/:v:/g/personal/carlos_espinoza23_unmsm_edu_pe/EVVBBoGTIY9Pq8yRBDcBzBkB71-z9MlMVYhYp9qtdfGsig?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=yISCyr))
+[Ver video de demostración](https://unmsmmail-my.sharepoint.com/:v:/g/personal/carlos_espinoza23_unmsm_edu_pe/EVVBBoGTIY9Pq8yRBDcBzBkB71-z9MlMVYhYp9qtdfGsig?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=yISCyr)
