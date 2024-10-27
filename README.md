@@ -78,3 +78,13 @@ Este sistema permite gestionar el flujo completo de medicamentos:
 ## **Video de Demostración**
 Puedes ver la demostración del sistema en el siguiente enlace:  
 [Ver video de demostración](https://unmsmmail-my.sharepoint.com/:v:/g/personal/carlos_espinoza23_unmsm_edu_pe/EVVBBoGTIY9Pq8yRBDcBzBkB71-z9MlMVYhYp9qtdfGsig?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=yISCyr)
+
+## 👥 Colaboradores
+
+A continuación, se mencionan los colaboradores que trabajaron en este proyecto:  
+
+- **[Melani Laveriano](https://github.com/MelaniLav)** – Desarrollo de microservicios en nodejs y frontend en Angular.
+- **[Melvin Huaricacha]** – Desarrollo de microservicio en nodejs.  
+- **Carlos Espinoza** – Desarrollo frontend en Angular, desarrollo de los microservicios en Spring Boot 3 y coordinación del proyecto.
+
+---
