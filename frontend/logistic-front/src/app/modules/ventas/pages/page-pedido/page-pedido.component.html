@@ -1,0 +1,29 @@
+
+<div class="main-content">
+  <div class="tab-container">
+    <app-tab-bar [tabs]="tabs" (tabSelected)="onTabSelected($event)" [tabForaneo]="seleccionado| async"></app-tab-bar>
+    <div class="tab-content">
+      <div *ngIf="selectOption === '/ventas/pedidos/generarCotizacion'">
+        <ng-container *ngTemplateOutlet="nuevaCotizacionZone"></ng-container>
+      </div>
+      <div *ngIf="selectOption === '/ventas/pedidos/cotizaciones'">
+        <ng-container *ngTemplateOutlet="tablaCotizacionZone"></ng-container>
+      </div>
+      <div *ngIf="selectOption === '/ventas/pedidos/pedidos'">
+        <ng-container *ngTemplateOutlet="pedidosZone"></ng-container>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #nuevaCotizacionZone>
+  <app-form-cotizacion></app-form-cotizacion>
+</ng-template>
+
+<ng-template #tablaCotizacionZone>
+  <app-tabla-cotizacion (emitirIdDeCotizacion)="navigateToClientes($event)" (navigateToPedidos)="onNavigateToPedidos($event)"></app-tabla-cotizacion>
+</ng-template>
+
+<ng-template #pedidosZone>
+  <app-form-pedido (emitirDatosFact)="onNavigateToFacturas($event)" [idCotizacion]="idCotizacion" [dni]="dni"></app-form-pedido>
+</ng-template>

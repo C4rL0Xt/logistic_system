@@ -1,0 +1,106 @@
+<div class="container">
+  <h2>Proveedores</h2>
+  <div class="mat-elevation-z8">
+    <div class="responsive-table-container">
+      <table mat-table [dataSource]="dataSource" matSort class="full-width-table">
+        <ng-container matColumnDef="idproveedor">
+          <th class="font-cabecera" mat-header-cell *matHeaderCellDef mat-sort-header> Código </th>
+          <td class="font-test" mat-cell *matCellDef="let proveedor" (click)="onRowClicked(proveedor)">
+            {{proveedor.idproveedor}}
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="empresa">
+          <th class="font-cabecera" mat-header-cell *matHeaderCellDef mat-sort-header> Empresa </th>
+          <td class="font-test" mat-cell *matCellDef="let proveedor" (click)="onRowClicked(proveedor)">
+            {{proveedor.empresa}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="direccion">
+          <th class="font-cabecera" mat-header-cell *matHeaderCellDef mat-sort-header> Direccion </th>
+          <td class="font-test" mat-cell *matCellDef="let proveedor" (click)="onRowClicked(proveedor)">
+            {{proveedor.direccion}}
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="telefono">
+          <th class="font-cabecera" mat-header-cell *matHeaderCellDef mat-sort-header>Telefono </th>
+          <td class="font-test" mat-cell *matCellDef="let proveedor" (click)="onRowClicked(proveedor)">
+            {{proveedor.telefono}}
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="email">
+          <th class="font-cabecera" mat-header-cell *matHeaderCellDef mat-sort-header>Email</th>
+          <td class="font-test" mat-cell *matCellDef="let proveedor" (click)="onRowClicked(proveedor)">
+            {{proveedor.email}}
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="ruc">
+          <th class="font-cabecera" mat-header-cell *matHeaderCellDef mat-sort-header> RUC </th>
+          <td class="font-test" mat-cell *matCellDef="let proveedor" (click)="onRowClicked(proveedor)">
+            {{proveedor.ruc}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="rate">
+          <th class="font-cabecera" mat-header-cell *matHeaderCellDef mat-sort-header> Rate</th>
+          <td class="font-test" mat-cell *matCellDef="let proveedor">
+            {{proveedor.rate}}
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+  </div>
+
+  <mat-card class="product-form-card">
+    <mat-card-title>Actualizar Proveedor</mat-card-title>
+    <form [formGroup]="proveedorForm" class="product-form-grid" fxLayout="row wrap" fxLayoutGap="16px">
+      <mat-form-field appearance="fill">
+        <mat-label>Codigo Proveedor</mat-label>
+        <input matInput formControlName="idproveedor">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Empresa</mat-label>
+        <input matInput formControlName="empresa">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Direccion</mat-label>
+        <input matInput formControlName="direccion">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Telefono</mat-label>
+        <input matInput formControlName="telefono">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" type="email">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>RUC</mat-label>
+        <input matInput formControlName="ruc" type="text">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Rating</mat-label>
+        <input matInput formControlName="rate" type="number" readonly>
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="openRateDialog()">Calificar</button>
+    </form>
+
+    <div class="action-buttons" fxFlex="100">
+      <button mat-raised-button color="primary" type="submit" (click)="onSave()">Guardar</button>
+      <button mat-raised-button color="warn" type="button" (click)="onCancel()">Cancelar</button>
+    </div>
+  </mat-card>
+</div>
